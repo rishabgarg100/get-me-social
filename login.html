@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : EarthlingTwo  
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090918
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+.style1 {
+	font-size: 36pt;
+	color: #3D2A0B;
+	font-family: "Comic Sans MS";
+	text-decoration: underline;
+}
+.style2 {
+	text-align: center;
+	font-size: large;
+}
+.style3 {
+	font-family: "Comic Sans MS";
+}
+.style4 {
+	font-size: x-large;
+}
+.style5 {
+	text-align: left;
+}
+</style>
+<script type="text/javascript">
+	function validate()
+	{
+	var name = document.myform.Text1.value;
+	var pwd = document.myform.Password1.value;
+	var flag = true;
+	  document.getElementById('ul1').innerHTML ="";
+	if (name == "")
+	   {
+	       document.getElementById('td1').innerHTML="*";
+	       document.getElementById('ul1').innerHTML="<li>USERNAME CANT BE EMPTY</li>";
+	       flag = false;
+	   }
+	if (pwd == "")
+	   {
+	        document.getElementById('td2').innerHTML="*";
+	        document.getElementById('ul1').innerHTML +="<li>PASSWORD CANT BE EMPTY</li>";
+	        flag = false;
+	   }   
+	   return flag;
+	}
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" style="height: 233px">
+		<div style="position: absolute; width: 443px; height: 89px; z-index: 2; left: 91px; top: 104px" id="layer2" class="style1">
+			<strong><em>GET&nbsp; ME SOCIAL</em></strong></div>
+	</div>
+	<!-- end #header -->
+	<div id="menu">
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<div style="position: absolute; width: 410px; height: 207px; z-index: 1; left: 423px; top: 307px" id="layer1" class="style2">
+		<strong><em><span class="style4">&nbsp;</span></em></strong><span class="style3"><strong><em><span class="style4">LOGIN<br />
+		</span>
+		<form method="post" action="logincheck.php" onsubmit="return validate()" name="myform">
+			<div class="style5" style="height: 145px">
+				<span class="style3"><strong><em>
+				<table style="width: 100%">
+					<tr>
+						<td style="width: 160px">USERNAME</td>
+						<td style="width: 206px">
+						<input name="Text1" type="text" style="width: 194px; height: 25px" />&nbsp;</td>
+						<td id="td1">
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="width: 160px">PASSWORD</td>
+						<td style="width: 206px">
+						<input name="Password1" type="password" style="width: 193px; height: 26px" />&nbsp;</td>
+						<td id="td2">
+						&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="width: 160px; height: 30px">&nbsp;</td>
+						<td style="height: 30px; width: 206px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input name="Submit1" type="submit" value="LOGIN" style="width: 74px; height: 28px" />&nbsp;</td>
+						<td style="height: 30px">&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="width: 160px"><a href="Sign%20Up.html">SIGN UP</a></td>
+						<td style="width: 206px"><a href="forgot.html">FORGOT PASSWORD</a></td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+				</em></strong></span></div>
+		</form>
+		</em></strong></span></div>
+	<!-- end #menu -->
+	<!-- end #page -->
+	<br />
+	<br />
+	<br />
+	<br />
+	<div style="position: absolute; width: 411px; height: 57px; z-index: 3; left: 423px; top: 566px" id="layer3">
+	<ul id="ul1">
+	
+	</ul>
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</div>
+<div id="footer-content">
+</div>
+<!-- end #footer -->
+</body>
+</html>

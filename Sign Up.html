@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : EarthlingTwo  
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090918
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Sign Up</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+.style1 {
+	font-size: 36pt;
+	color: #3D2A0B;
+	font-family: "Comic Sans MS";
+	text-decoration: underline;
+}
+.style2 {
+	text-align: left;
+	font-size: large;
+}
+.style3 {
+	font-family: "Comic Sans MS";
+}
+.style4 {
+	font-size: x-large;
+}
+.style5 {
+	font-size: 27pt;
+}
+</style>
+<script type="text/javascript">
+	function validate()
+	{ // alert("hi");
+	var ui = document.myform.Text1.value;
+	var un = document.myform.Text2.value;
+	var pwd = document.myform.Password1.value;
+	var gen = document.myform.Radio1.value;
+	var sq = document.myform.Select1.value;
+	var sans = document.myform.Text3.value;
+	var flag = true;
+	document.getElementById('ul1').innerHTML="";
+	   if (ui == "")
+	   {  // alert("hi1");
+	       document.getElementById('td1').innerHTML="*";
+	       document.getElementById('ul1').innerHTML="<li>USERID CANNOT BE EMPTY</li>";
+	       flag = false;
+	   }
+	   if (un == "")
+	   {   // alert("hi2");
+	        document.getElementById('td2').innerHTML="*";
+	       document.getElementById('ul1').innerHTML+="<li>USERNAME CANNOT BE EMPTY</li>";
+	        flag = false;
+	   }   
+	   if (pwd == "")
+	   {    //alert("hi3");
+	        document.getElementById('td3').innerHTML="*";
+	        document.getElementById('ul1').innerHTML+="<li>PASSWORD CANNOT BE EMPTY </li>";
+	        flag = false;
+	   } 
+	   if (gen == "")
+	   {
+	        document.getElementById('td4').innerHTML="*";
+	        flag = false;
+	   } 
+	   if (sq == "")
+	   {
+	      //  document.getElementById('td5').innerHTML="*";
+	        flag = false;
+	   } 
+	   if (sans == "")
+	   {   // alert("hi4");
+	        document.getElementById('td6').innerHTML="*";
+	        document.getElementById('ul1').innerHTML += "<li>SECURITY QUESTION CANNOT BE EMPTY</li>";
+	        flag = false;
+	   } //alert(flag);
+	   return flag;
+	}
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" style="height: 233px">
+		<div style="position: absolute; width: 443px; height: 89px; z-index: 2; left: 91px; top: 104px" id="layer2" class="style1">
+			<strong><em>GET&nbsp; ME SOCIAL</em></strong></div>
+	</div>
+	<!-- end #header -->
+	<div id="menu">
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<div style="position: absolute; width: 555px; height: 351px; z-index: 1; left: 423px; top: 306px" id="layer1" class="style2">
+		<strong><em><span class="style4">&nbsp;</span></em></strong><span class="style3"><strong><em><span class="style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</span><span class="style5">REGISTER<br />
+		</span>
+		<form method="post" name="myform" action="reg.php" onsubmit="return validate()" >
+			<table style="width: 100%">
+				<tr>
+					<td style="width: 224px">USER ID</td>
+					<span class="style4">
+					<td style="width: 283px">
+					<input name="Text1" type="text" style="width: 248px; height: 25px" />&nbsp;</td>
+					<td id="td1">&nbsp;</td>
+				</tr>
+				<tr>
+					<td style="width: 224px">USERNAME</td>
+					<td style="width: 283px">
+					<input name="Text2" type="text" style="width: 248px; height: 25px" />&nbsp;</td>
+					<td id="td2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td style="width: 224px">PASSWORD</td>
+					<td style="width: 283px">
+					<input name="Password1" type="password" style="width: 248px; height: 25px" />&nbsp;</td>
+					<td id="td3">&nbsp;</td>
+				</tr>
+				<tr>
+					<td style="width: 224px">GENDER</td>
+					<td style="width: 283px">
+					<input name="Radio1" type="radio" checked="checked" /> &nbsp;male&nbsp;&nbsp;&nbsp; &nbsp;
+					<input name="Radio1" type="radio" />&nbsp; female</td>
+					<td id="td4">&nbsp;</td>
+				</tr>
+				<tr>
+					<td style="width: 224px">SECURITY QUESTION </td>
+					<td style="width: 283px">
+					<select name="Select1" style="width: 248px; height: 28px">
+					<option>What is Your pet Name?</option>
+					<option>What is Your Hometown?</option>
+					<option>What is Your neighbhour's name?</option>
+					<option>What is Your grandfather Name?</option>
+					</select>&nbsp;</td>
+					<td id="td5">&nbsp;</td>
+				</tr>
+				<tr>
+					<td style="width: 224px">SECURITY ANSWER</td>
+					<td style="width: 283px">
+					<input name="Text3" type="text" style="width: 248px; height: 25px" />&nbsp;</td>
+					<td id="td6">&nbsp;</td>
+				</tr>
+				<tr>
+					<td style="width: 224px">&nbsp;</td>
+					<td style="width: 283px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input name="Submit1" type="submit" value="REGISTER" style="width: 108px; height: 26px" />&nbsp;</td>
+					<td id="td7">&nbsp;</td>
+				</tr>
+			</table>
+		</span>
+		</form>
+		</em></strong></span></div>
+	<!-- end #menu -->
+	<!-- end #page -->
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<div style="position: absolute; width: 555px; height: 100px; z-index: 3; left: 422px; top: 692px" id="layer3">
+	<ul id="ul1"></ul>
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</div>
+<div id="footer-content">
+</div>
+<!-- end #footer -->
+</body>
+</html>
